@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./ServicesSection.css";
 
 const headingVariants: Variants = {
@@ -162,6 +162,25 @@ const services = [
 const ServicesSection = () => {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
+  const itemRefs = useRef<Record<string, HTMLDivElement | null>>({});
+
+  useEffect(() => {
+    if (!expandedId) return;
+
+    const element = itemRefs.current[expandedId];
+    if (!element) return;
+
+    // Small timeout so the expand animation can start and height is updated
+    const timeout = setTimeout(() => {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }, 250);
+
+    return () => clearTimeout(timeout);
+  }, [expandedId]);
+
   const toggleService = (id: string) => {
     setExpandedId(expandedId === id ? null : id);
   };
@@ -201,6 +220,9 @@ const ServicesSection = () => {
             <motion.div
               key={service.id}
               className="services-item"
+              ref={(el) => {
+                itemRefs.current[service.id] = el;
+              }}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
