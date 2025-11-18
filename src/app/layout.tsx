@@ -161,8 +161,8 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
         {/* Google tag (gtag.js) */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-6VD1SP698Z"
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-0447V2XK5V"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
@@ -170,7 +170,7 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-6VD1SP698Z');
+              gtag('config', 'G-0447V2XK5V');
           `}
         </Script>
       </head>
