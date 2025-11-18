@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "@/index.css";
 import { Toaster } from "@/components/ui/toaster";
@@ -158,6 +159,20 @@ export default function RootLayout({
         {/* Performance & Security Headers */}
         <meta httpEquiv="x-dns-prefetch-control" content="on" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+
+        {/* Google tag (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6VD1SP698Z"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6VD1SP698Z');
+          `}
+        </Script>
       </head>
       <body className={inter.className}>
         <PerformanceMonitor />
