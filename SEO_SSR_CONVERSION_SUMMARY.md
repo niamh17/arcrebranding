@@ -239,7 +239,7 @@ These components handle **only** the interactive/animated parts:
 ### Email Configuration
 - [x] Email updated in Menu component
 - [x] Email updated in Footer component
-- [x] Consistent email: `arc.ai.agencylk@gmail.com`
+- [x] Consistent email: `support@arcai.agency`
 
 ---
 

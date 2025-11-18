@@ -70,12 +70,12 @@ const Footer = () => {
               >
                 <p className="text-[#777777] text-sm uppercase tracking-wider">Email Address</p>
                 <motion.a
-                  href="mailto:arc.ai.agencylk@gmail.com"
+                  href="mailto:support@arcai.agency"
                   className="text-[#FF4925] text-2xl md:text-3xl lg:text-4xl font-bold block hover:opacity-80 transition-opacity"
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  arc.ai.agencylk@gmail.com
+                  support@arcai.agency
                 </motion.a>
                 <p className="text-[#777777] text-sm">We'll respond within 24 hours</p>
               </motion.div>

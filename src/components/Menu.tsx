@@ -168,12 +168,12 @@ const Menu = ({ isOpen, onClose }: MenuProps) => {
               </p>
               <h3 className="text-2xl lg:text-3xl font-medium">
                 <a
-                  href="mailto:arc.ai.agencylk@gmail.com"
+                  href="mailto:support@arcai.agency"
                   className="text-[rgb(255,73,37)] hover:text-[rgb(255,93,57)] transition-colors"
                   target="_blank"
                   rel="noopener"
                 >
-                  arc.ai.agencylk@gmail.com
+                  support@arcai.agency
                 </a>
               </h3>
             </div>

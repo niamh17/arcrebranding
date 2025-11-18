@@ -182,10 +182,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <a 
-                      href="mailto:arc.ai.agencylk@gmail.com"
+                      href="mailto:support@arcai.agency"
                       className="text-lg text-[rgb(255,73,37)] hover:text-[rgb(255,93,57)] transition-colors leading-relaxed block"
                     >
-                      arc.ai.agencylk@gmail.com
+                      support@arcai.agency
                     </a>
                     <p className="text-sm text-[rgb(119,119,119)] mt-2">
                       We'll respond within 24 hours
