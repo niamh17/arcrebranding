@@ -51,7 +51,11 @@ const Menu = ({ isOpen, onClose }: MenuProps) => {
             <div className="space-y-0">
               {/* Home Link - Active */}
               <a
-                href="#"
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation('/');
+                }}
                 className="group block py-6 border-b border-[rgb(88,88,88)] hover:border-[rgb(255,73,37)] transition-all duration-300"
                 style={{ animationDelay: "0.1s" }}
               >

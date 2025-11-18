@@ -58,14 +58,14 @@ export default function ServicesPage() {
     {
       icon: <Code2 className="w-8 h-8" />,
       number: "001",
-      title: "Landing Pages",
-      description: "High-converting landing pages designed to capture attention and drive action with compelling design and strategic messaging.",
+      title: "Smart Websites",
+      description: "High-converting smart websites designed to capture attention and drive action with compelling design and strategic messaging.",
       tags: ["Conversion Optimization", "A/B Testing", "Lead Generation", "Mobile-First"],
       modalContent: {
         headline: "Turn Visitors Into Customers—Instantly",
-        subheadline: "Landing pages designed to convert, not just look pretty",
+        subheadline: "Smart websites designed to convert, not just look pretty",
         problem: "Your traffic is costing you money. Most businesses send ads to their homepage, where visitors get distracted, confused, or lost. A generic homepage converts at 2-3%. You're literally throwing 97% of your ad spend down the drain.",
-        solution: "We build laser-focused landing pages with one goal: conversion. Every element—headlines, visuals, CTAs, social proof—is strategically placed to guide visitors toward taking action. No distractions. No confusion. Just results.",
+        solution: "We build laser-focused smart websites with one goal: conversion. Every element—headlines, visuals, CTAs, social proof—is strategically placed to guide visitors toward taking action. No distractions. No confusion. Just results.",
         benefits: [
           "Increase conversion rates by 300-500% compared to homepage traffic",
           "Reduce cost-per-acquisition with pages built for specific campaigns",
